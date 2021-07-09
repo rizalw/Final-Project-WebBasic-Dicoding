@@ -262,6 +262,15 @@ footer p{
     }
 }
 
+@media screen and (max-width:1000px){
+    .gabung, aside{
+        width: 100%;
+    }
+    aside{
+        margin-bottom: 36px;
+    }
+}
+
 @media screen and (max-width: 770px) {
     #navigation{
         justify-content: center;
@@ -284,7 +293,7 @@ footer p{
 
     }
     .jci-banner::before{
-        background-size:contain;
+        background-size:cover;
         top: 200.9px;
     }
     .logo-banner{
@@ -296,7 +305,7 @@ footer p{
         flex-direction: column;
     }
     .caption-jci-banner > *{
-        color: #1B1A17;
+        color: white;
     }
     .caption-jci-banner h1, .caption-jci-banner p{
         text-align: center;
@@ -321,12 +330,6 @@ footer p{
         font-size: 20px;
     }
     .detail-divisi .card:last-child{
-        margin-bottom: 36px;
-    }
-    .gabung, aside{
-        width: 100%;
-    }
-    aside{
         margin-bottom: 36px;
     }
 }
@@ -360,6 +363,9 @@ footer p{
         margin-left: auto;
         margin-right: auto;
     }
+    .gabung img{
+        width: 200px;
+    }
 }
 @media screen and (max-width: 400px){
     .dokumentasi figure img{
@@ -374,8 +380,5 @@ footer p{
     }
     .card .misi{
         margin-top: 36px;
-    }
-    .gabung img{
-        width: 200px;
     }
 }
