@@ -1,0 +1,381 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    background-color: #FCE5C9;
+}
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+#navigation{
+    justify-content: space-between;
+    background-color: #FF8C00;
+    align-items: center;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+}
+#navigation ul{
+    margin: 0px;
+}
+#navigation ul li{
+    font-size: 20px;
+    list-style-type: none;
+    font-weight: bold;
+}
+#navigation ul li a{
+    color: white;
+    text-decoration: none;
+}
+.logo-navbar{
+    width: 60px;
+}
+.left{
+    align-items: center;
+    padding: 0px;
+}
+.left li{
+    padding: 16px;
+}
+.right li{
+    padding: 12px;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    color: white;
+    background-color: #FF8C00;
+    z-index: 2;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.25);
+    
+}
+.dropdown-content p{
+    font-size: smaller;
+    font-weight: normal;
+    padding: 8px;
+    margin: 0px;
+}
+.dropdown-menu:hover .dropdown-content{
+    display: block;
+}
+.flex{
+    display: flex;
+}
+.jci-banner::before{
+    background-size: 100% 342px;
+    background-repeat: no-repeat;
+    background-image: url('1525595121-telkom-cropped-filtered.jpg');
+    content: "";
+    position: absolute;
+    top: 96.9px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+}
+.jci-banner ul{
+    position: relative;
+    margin: 0px;
+    padding: 48px;
+}
+.jci-banner ul >*{
+    list-style-type: none;
+    color: white;
+}
+.logo-banner{
+    width: 242px;
+}
+.jci-banner-content{
+    margin: 0px auto;
+    width: 75%;
+
+}
+.inside-jci-banner{
+    align-items: center;
+}
+.jci-aktivitas{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    padding: 36px 56px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    background-color: #FCBC76;
+}
+.deskripsi-aktivitas h2{
+    text-align: center;
+    font-size: 32px;
+}
+.deskripsi-aktivitas p, .deskripsi-aktivitas ol li{
+    font-size: 20px;
+}
+.bagian-dokumentasi{
+    flex-direction: column;
+}
+.dokumentasi figure img{
+    width: 300px;
+    object-fit: contain;
+}
+.dokumentasi figure figcaption{
+    text-align: center;
+}
+.deskripsi-divisi{
+    flex-direction: column;
+    text-align: center;
+}
+.deskripsi-divisi h2{
+    padding: 48px auto 24px auto;
+    font-size: 32px;
+}
+.deskripsi-divisi p{
+    margin: 0px auto;
+    width: 60%;
+    font-size: 20px;
+}
+.detail-divisi{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 36px;
+}
+.detail-divisi > *{
+    flex-direction: column;
+    max-width: 636px;
+    padding: 0px;
+    margin-top: 36px;
+}
+.detail-divisi .card > *{
+    text-align: center;
+}
+.detail-divisi .card h4{
+    margin: 36px auto 24px auto;
+    font-size: 30px;
+}
+.detail-divisi .card p{
+    margin: 0px auto 36px auto;
+    width: 80%;
+    font-size: 20px;
+}
+.tentang-kami, .divisi, .jci-aktivitas{
+    color: #1B1A17;
+}
+.tentang-kami, .header-tentang-kami{
+    flex-direction: column;
+}
+.tentang-kami .header-tentang-kami h2{
+    text-align: center;
+    font-size: 32px;
+}
+.tentang-kami{
+    padding: 36px 56px;
+}
+.deskripsi-header-tentang-kami > *{
+    width: 80%;
+    font-size: 20px;
+}
+.deskripsi-header-tentang-kami{
+    justify-content: space-between;
+}
+.deskripsi-header-tentang-kami p {
+    margin: 0px 0px 36px 0px;
+}
+.deskripsi-header-tentang-kami:nth-last-child(){
+    margin-left: auto;
+}
+.detail-tentang-kami{
+    justify-content: space-between;
+}
+.detail-tentang-kami > *{
+    background-color: #FCE5C9;
+}
+.detail-tentang-kami .card h3{
+    text-align: center;
+    font-size: 30px;
+}
+.detail-tentang-kami .card p, .detail-tentang-kami .card ol li{
+    margin: 0px;
+    font-size: 20px;
+}
+.visi{
+    margin-right: 28px;
+}
+.misi{
+    margin-left: 28px;
+}
+.gabung{
+    width: 50%;
+    float: left;
+    padding: 36px 56px;
+    box-sizing: border-box;
+}
+.gabung p a{
+    color: #1B1A17;
+}
+.gabung > * {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gabung{
+    flex-direction: column;
+}
+.gabung img{
+    width: 546px;
+}
+aside{
+    text-align: center;
+    box-sizing: border-box;
+    width: 50%;
+    float: right;
+}
+.foto-diri{
+    width: 200px;
+    border-radius: 100px;
+}
+section .data-diri{
+    margin-left: auto;
+    margin-right: auto;
+}
+.data-diri tr td{
+    padding: 4px;
+}
+footer {
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    background-color: #FF8C00;
+    text-align: center;
+    font-weight: bold;
+ }
+footer p{
+    margin: 0px;
+}
+
+@media screen and (max-width:1280px) {
+    .jci-aktivitas{
+        flex-direction: column;
+    }
+    .dokumentasi{
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    #navigation{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .left{
+        flex-direction: column;
+    }
+    #navigation ul li a, footer p{
+        font-size: 16px;
+    }
+    .right{
+        padding-left: 0px;
+    }
+    .inside-jci-banner{
+        flex-direction: column;
+    }
+    .jci-banner ul{
+        padding: 0px;
+
+    }
+    .jci-banner::before{
+        background-size:contain;
+        top: 200.9px;
+    }
+    .logo-banner{
+        width: 150px;
+    }
+    .caption-jci-banner{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .caption-jci-banner > *{
+        color: #1B1A17;
+    }
+    .caption-jci-banner h1, .caption-jci-banner p{
+        text-align: center;
+    }
+    .caption-jci-banner p{
+        margin: 0px;
+        padding-bottom: 16px;
+    }
+    .jci-aktivitas{
+        flex-direction: column;
+    }
+    .deskripsi-aktivitas h2, .deskripsi-divisi h2{
+        font-size: 24px;
+    }
+    .deskripsi-aktivitas p, .deskripsi-aktivitas ol li, .deskripsi-divisi p, .detail-divisi .card p, .deskripsi-header-tentang-kami p, .detail-tentang-kami .card p, .detail-tentang-kami .card ol li{
+        font-size: 16px;
+    }
+    .dokumentasi figure img{
+        width: 250px;
+    }
+    .detail-divisi .card h4{
+        font-size: 20px;
+    }
+    .detail-divisi .card:last-child{
+        margin-bottom: 36px;
+    }
+    .gabung, aside{
+        width: 100%;
+    }
+    aside{
+        margin-bottom: 36px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .dokumentasi{
+        flex-direction: column;
+    }
+    .foto-kiri{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .foto-kanan{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .detail-divisi{
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+    .deskripsi-header-tentang-kami{
+        flex-direction: column;
+    }
+    .deskripsi-header-tentang-kami p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .detail-tentang-kami{
+        flex-direction: column;
+    }
+    .detail-tentang-kami > *{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width: 400px){
+    .dokumentasi figure img{
+        width: 150px;
+    }   
+    .card .visi, .card .misi{
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+    .card .visi h3, .card .misi h3{
+        margin-top: 0px;
+    }
+    .card .misi{
+        margin-top: 36px;
+    }
+    .gabung img{
+        width: 200px;
+    }
+}
